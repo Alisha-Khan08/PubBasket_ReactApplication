@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Pub Basket: Online Grocery Store 
+       </title>
+    <link rel="stylesheet" type="text/css" href="Styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+
+  <body>
+    
+    <div id="heading">
+      <div id="heading_main1">
+
+        <p id="login">Login|Sign Up</p>
+        <p>📍56004, Bangalore</p>
+        <p>📞1860 123 1000</p>
+      </div>
+      <div id="head">
+       
+      <img src="Images/bigbasket_logo.png" aria-label="Big-Basket" />
+      <div id="heading_main2">
+      <input
+      type="search"
+      id="search_bar"
+      placeholder="Search for Products.."
+      aria-label="Search"
+    />
+    <img id="search_img" src="Images/Search_image.png"  aria-label="Search_image" /></div>
+    <img src="Images/shopping-basket.PNG" aria-label="shopping-basket" />
+   
+    </div>
+<div id="head2">
+  <div id="dropdown_list">
+    <a href="#">Shop by Category <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+   
+</div>
+<div id="offers">
+  <p>🏷️ Offers</p>
+</div>
+</div>
+    
+    </div>
+    <div id="bodyy">
+
+      <div id="image_slider1">
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/2210861-bbpl-staples_460_Bangalore.jpg"
+          class="mySlide" aria-label="Offer on Staples"/>
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/fresho-fnv-BANNER-2-1600x460-18thOCT22.jpg"
+          class="mySlide" aria-label="Fresho Days"/>
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/HP_EMF_M_T1-1600x460_221012.jpg"
+          class="mySlide" aria-label="Fresho Meat"/>
+          <div class="flex-buttons">
+       <button class="btn1" onclick="currentSlide1(1)">Offer on Staples</button>
+       <button class="btn2" onclick="currentSlide1(2)">Fresho Days</button>
+       <button class="btn3" onclick="currentSlide1(3)">Fresho Meat</button>
+      </div>
+      </div>
+      
+      
+      <div id="company">
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_01.png" aria-label="EGGS, MEAT AND FISH"/>
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_02.png" aria-label="NEUPASS"/>
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_03.png" aria-label="AYURVEDA"/>
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_04.png" aria-label="BUY MORE SAVE MORE"/>
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_05.png" aria-label="DEALS OF THE WEEK"/>
+        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_251022_06.png" aria-label="COMBO STORE"/>
+      </div>
+      
+      <div id="popular">
+        <h6>My Smart Basket</h6>
+        <div class="container">
+          <button id="left-btn">-<i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+          <div id="smart_basket">
+
+          </div>
+          <button id="right-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i>-</button>
+            <!---------------------- FETCH -------------------->
+        </div>
+      </div>
+      <br>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="https://www.bigbasket.com/media/uploads/banner_images/all_c_snacks-you-cant-resist_400_7-8nov_201022.jpg" style="width: 100%" aria-label="Snacks you can't resist upto 35% off"/>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://www.bigbasket.com/media/uploads/banner_images/all_c_sweet-&-snacky_400_5-6nov_201022.jpg" style="width: 100%" aria-label="Sweet & Snacky in one Byte upto 50% off"/>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://www.bigbasket.com/media/uploads/banner_images/all_c_killer-deals_400_3-4nov_201022.jpg" style="width: 100%" aria-label="Killer Deals upto 50% off"/>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/all_c_brewtiful-coffee_400_9-10nov_201022.jpg" style="width: 100%" aria-label="The brew-tiful coffee range upto 40% off"/>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/all_c_om-nom-nom_400_9-10nov_201022.jpg" style="width: 100%" aria-label="Om nom nom! upto 35% off"/>
+          </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+      </div>
+    
+      <div id="bank_offers">
+        <h6>Bank Offers</h6>
+        <div id="bank_offers_id">
+          <img src="Images/bank1.webp" aria-label="Citi Bank Rs250 Instant discount*"/>
+          <img src="Images/bank2.webp" aria-label="RBL Bank Rs150 Instant discount*"/>
+          <img src="Images/bank3.webp" aria-label="digibank by DBs Up to Rs400 Cashback"/>
+          <img src="Images/bank4.webp" aria-label="Indusind Bank Up to Rs1000 Instant discount"/>
+        </div>
+      </div>
+      
+        </div>
+      </div>
+      
+      <div id="popular">
+        <h6>best sellers</h6>
+        <div id="popular_id">
+          <img src="https://www.bigbasket.com/media/uploads/p/s/40089742_2-fresho-beans-haricot.jpg" aria-label="Beans Haricot"/>
+          <img src="https://www.bigbasket.com/media/uploads/p/s/40129678_8-pampers-diaper-pants-extra-large.jpg" aria-label="pampers diaper pants"/>
+          <img src="https://www.bigbasket.com/media/uploads/p/s/1203441_1-fresho-onion-1-kg-new-potato-1-kg-tomato-hybrid-1-kg.jpg" aria-label="Value Pack Onion 1 kg + New Potato 1 kg + Tomato - Hybrid 1 kg"/>
+          <img src="https://www.bigbasket.com/media/uploads/p/s/10000031_21-fresho-banana-yelakki.jpg" aria-label="Banana - Yelakki" />
+          <img src="https://www.bigbasket.com/media/uploads/p/s/10000068_22-fresho-capsicum-green.jpg" aria-label="Capsicum - Green (Loose)
+          " />
+        </div>
+      </div>
+      <div id="top_offers">
+        <h6>Top Offers</h6>
+        <div id="top_offers_id">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_dow-topoffersStorefront_m_480_251022_01.jpg" aria-label="Deal of the week"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_big-pack-topoffersStorefront_m_480_251022_02.jpg" aria-label="Big pack bigger discount" />
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_combos-topoffersStorefront_m_480_251022_03.jpg" aria-label="combo you can't miss"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/91b481ca-1f6a-4550-9c1c-52757c371a96/hp_30-corner-topoffersStorefront_m_480_251022_04.jpg" aria-label="The Rs30 corner"/>
+        </div>
+      </div>
+      <div id="popular">
+        <h6>Fruits and Vegetables</h6>
+        <ul></ul>
+        <div id="fruits_id">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_organic-fnv_Storefront_m_251022_01.jpg" aria-label="Organic Fruits and Vegetables"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_fresh-fruits-fnv_Storefront_m_251022_02.jpg" aria-label="Fresh Fruits"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_fresh-veggs-fnv_Storefront_m_251022_03.jpg" aria-label="Fresh Vegetables"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_cutx-sprouts-fnv_Storefront_m_251022_04.jpg" aria-label="Cuts and Sprouts"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_exotic-fnv_Storefront_m_251022_05.jpg" aria-label="Exotic Fruits & vegetables"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/9801292b-8291-488a-bb4e-7712022dc060/hp_herbs-seasoning-fnv_m_251022_06.jpg" aria-label="Herbs and seasonings"/>
+          
+        </div>
+      </div>
+      <div id="staples">
+        <h6>Your Daily Staples</h6>
+        <div id="staples_id">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_atta-flour-staplesStorefront_m_480_251022_01.jpg" aria-label="Atta & Flour" />
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_rice-staplesStorefront_m_480_251022_02.jpg" aria-label="Rice & Rice Products"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_dals-pulses-staplesStorefront_m_480_251022_03.jpg" aria-label="Dals & Pulses"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_cooking-oil-staplesStorefront_m_480_251022_04.jpg" aria-label="Cooking Oils & Ghee"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_dry-fruits-staplesStorefront_m_480_251022_05.jpg" aria-label="Dry Fruits"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/fdc267dd-d968-4b49-933f-9f007b7aab7d/hp_salt-sugar-staplesStorefront_m_480_251022_06.jpg" aria-label="Salt, Sugar & Jaggery" />
+        </div>
+      </div>
+      <h6 class="five_para">Beverages</h6>
+      <div class="fruits">
+        <div class="left_fruit">
+          <img src="Images/hot_sips.PNG" aria-label="Hot Sips" />
+        </div>
+        <div class="right_fruit">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coost-beveragesStorefront_m_251022_275x184_02.jpg" aria-label="Boost Metabolism"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_coffee-beveragesStorefront_m_251022_275x184_03.jpg" aria-label="Kings of Caffeine"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_health-beveragesStorefront_m_251022_275x184_04.jpg" aria-label="Health Drink Supplements"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/c9120807-7db5-4f39-9895-3b03dee91c54/hp_energy-beveragesStorefront_m_251022_275x184_05.jpg" aria-label="Energy Drinks"/>
+        </div>
+      </div>
+<div id="snacks_store">
+      <h6>Snacks Store</h6>
+        <div id="snacks_store_id">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_namkeens-snacksStorefront_m_480_251022_01.jpg" aria-label="Namkeens, Chips & Nachos" />
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_frozen-snacks-snacksStorefront_m_480_251022_02.jpg" aria-label="Frozen Snacks"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_soups-noodles-snacksStorefront_m_480_251022_03.jpg" aria-label="Soups, Noodles & Pasta" />
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_ready-cook-snacksStorefront_m_480_251022_04.jpg" aria-label="Ready to Cook"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_biscuit-cookies-snacksStorefront_m_480_251022_05.jpg" aria-label="Biscuits and Cookies"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/307d4a8d-5ffb-43c3-a70e-59d26c671cc2/hp_chocolates-snacksStorefront_m_480_251022_06-13.jpg" aria-label="Chocolates and Sweets"/>
+        </div>
+      </div>
+
+      <div id="house">
+        <h6>Cleaning & Household</h6>
+        <div id="house_id">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_cleaners-disnfectants_m_480_251022_01.jpg" aria-label="Cleaner & Disinfectants"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_detetgents-cleaningStorefront_m_480_251022_02.jpg" aria-label="Detegetns and Febric Care"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_kitchen-wipes-m_480_251022_03.jpg" aria-label="Kitechen Wipes & Utensil Scrubs"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/d3dc58d9-5531-4b8c-ae8c-740a6f4dce51/hp_fresheners-repplent-_m_480_251022_04.jpg" aria-label="Fresheners & Repellents"/>
+        </div>
+      </div>
+      <h6 class="five_para">Beauty and Hygiene</h6>
+      <div class="fruits">
+        <div class="left_fruit">
+          <img src="Images/lotion.PNG" aria-label="Winter Lotion & Lip Balms" />
+        </div>
+        <div class="right_fruit">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/6fe7b988-d217-4451-a8ff-6ddd2762f3d5/hp_beauty-Storefront_m_251022_275x184_02.jpg" aria-label="Joy Min 40% off"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/6fe7b988-d217-4451-a8ff-6ddd2762f3d5/hp_beauty-Storefront_m_251022_275x184_03.jpg" aria-label="Under Rs199"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/6fe7b988-d217-4451-a8ff-6ddd2762f3d5/hp_beauty-Storefront_m_251022_275x184_04.jpg" aria-label="Scent-station Perfumes"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/6fe7b988-d217-4451-a8ff-6ddd2762f3d5/hp_beauty-Storefront_m_251022_275x184_05.jpg" aria-label="November Sale upto 40% off"/>
+        </div>
+      </div>
+      <div id="home">
+        <h6>Home & Kitchen Essentials</h6>
+        <div id="home_id">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/dd3c4480-6322-4f07-a1b2-daab29bae452/hp_under-149-GMStorefront(Till10th)_m_251022_01.jpg" aria-label="Under 149"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/dd3c4480-6322-4f07-a1b2-daab29bae452/hp_150-299-GMStorefront(Till10th)_m_251022_02.jpg" aria-label="Rs150 - Rs299"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/dd3c4480-6322-4f07-a1b2-daab29bae452/hp_pressure-cookers-GMStorefront(Till10th)_m_251022_03.jpg" aria-label="Pressure Cooker & Gas Stoves"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/dd3c4480-6322-4f07-a1b2-daab29bae452/hp_dinnerware-GMStorefront(Till10th)_m_251022_04.jpg" aria-label="Dinnerware & Serveware"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/dd3c4480-6322-4f07-a1b2-daab29bae452/hp_kitchen-tools-GMStorefront(Till10th)_m_251022_05.jpg" aria-label="Kitchen tools and Accessories"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/dd3c4480-6322-4f07-a1b2-daab29bae452/hp_storage-containers-GMStorefront(Till10th)_m_251022_06.jpg" aria-label="Storage Container" />
+        </div>
+      </div>
+      <div id="brand">
+        <h6>Brand Store</h6>
+        <div id="brand_id">
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/1bfc68c3-152f-4ed4-bce4-40644929dff2/hp_amul-brandStorefront_m_480_251022_01.jpg" aria-label="Amul"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/1bfc68c3-152f-4ed4-bce4-40644929dff2/hp_dettol-brandStorefront_m_480_251022_02.jpg" aria-label="Dettol"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/1bfc68c3-152f-4ed4-bce4-40644929dff2/hp_cocacola-brandStorefront_m_480_251022_03.jpg" aria-label="Coca Cola"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/1bfc68c3-152f-4ed4-bce4-40644929dff2/hp_loreal-brandStorefront_m_480_251022_04.jpg" aria-label="Lorial Paris"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/1bfc68c3-152f-4ed4-bce4-40644929dff2/hp_indai-gate-brandStorefront_m_480_251022_05.jpg" aria-label="India Gate"/>
+          <img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/7f6ddfd5-93af-4bbd-a250-ce828daa63d6/1bfc68c3-152f-4ed4-bce4-40644929dff2/hp_durex-brandStorefront_m_480_251022_06.jpg" aria-label="Durex"/>
+        </div>
+      </div>
+      <div id="featured">
+        <h6>Featured Recipes</h6>
+        <div id="featured_id">
+          <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_bbw_c_400_web_wellness_banner_26102022.jpg" aria-label="Wellness- Find Health tips, recipes, meal plan & more"/>
+         </div>
+      </div>
+      <div id="read_me">
+        
+        <!-- <button onclick="myFunction()" id="myBtn">Read more</button> -->
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="footer1">
+        <div class="inside_footer1">
+          <span>BigBasket</span>
+          <ul type="none">
+            <li>About Us</li>
+            <li>In News</li>
+            <li>Green Basket</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+            <li>Careers At Bigbasket</li>
+            <li>bb Instant</li>
+            <li>bb Daily</li>
+          </ul>
+        </div>
+        <div class="inside_footer1">
+          <span>Help</span>
+          <ul type="none">
+            <li>FAQs</li>
+            <li>Contact Us</li>
+            <li>bb Wallet FAQs</li>
+            <li>bb Wallet T&Cs</li>
+            <li>Vendor Connect</li>
+            <li>E-Invoice Compliance for bigbasket vendors</li>
+          </ul>
+        </div>
+        <div class="inside_footer1">
+          <span>Download Our App</span>
+          <ul type="none">
+            <img width="50%" src="Images/both.png" aria-label="Download Our App : App Store , Google Play"/>
+          </ul>
+        </div>
+        <div class="inside_footer1">
+          <span>Get Social With Us</span>
+          <img width="170vw" src="Images/sociall.png" aria-label="Get Social With Us : faceboook, twitter, linkedin, instagram"/>
+        </div>
+      </div>
+      <hr color="lightgrey" />
+      <div id="footer2">
+        <p>
+          <span>POPULAR CATEGORIES:</span>&nbsp &nbsp Sunflower Oils, Wheat
+          Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs,
+          Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food,
+          Diapers & Wipes
+        </p>
+        <p>
+          <span>POPULAR BRANDS:</span>&nbsp &nbsp Fresho, bb Royal, Nandini,
+          Kelloggs, 24 Mantra, Saffola, Lizol, Safal, Horlicks, MTR, Fresho
+          Meats, Whisper , Real, Milky Mist, Nivea, Himalaya, Comfort, Sunpure ,
+          Bru , Zespri,
+        </p>
+        <p>
+          <span>CITIES WE SERVE:</span>&nbsp &nbsp Bangalore, Hyderabad, Mumbai,
+          Pune, Chennai, Delhi, Mysore, Madurai, Coimbatore, Vijayawada-Guntur,
+          Kolkata, Ahmedabad-Gandhinagar, Nashik, Lucknow-Kanpur, Gurgaon,
+          Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore, Chandigarh
+          Tricity, Jaipur, Bhopal, Noida-Ghaziabad, Kochi,
+        </p>
+        <p>
+          <span>PAYMENT OPTIONS:</span>&nbsp &nbsp
+          <img width="100vw" src="Images/cod.jpg" aria-label="Cash on Delivery"/>
+          <img width="100vw" src="Images/visa.png" aria-label="Visa"/>
+          <img width="100vw" src="Images/mastercard.png" aria-label="Mastercard"/>
+          <img width="100vw" src="Images/paytm.png" aria-label="Paytm"/>
+          <img width="100vw" src="Images/mobi.png" aria-label="Mobikwik"/>
+          <img width="100vw" src="Images/rupay.png" aria-label="rupay"/>
+          <img width="100vw" src="Images/american.png" aria-label="American express"/>
+        </p>
+      </div>
+    </div>
+    <div id="greetings">
+      <p>This is made by Alisha Khan</p>
+    </div>
+   
+    <script src='./js/main.js'></script>
+  </body>
+</html>
